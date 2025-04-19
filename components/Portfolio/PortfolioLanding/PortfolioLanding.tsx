@@ -16,7 +16,10 @@ const PortfolioLanding = (): JSX.Element => {
   ) => e.stopPropagation();
 
   return (
-    <Styled.Container onClick={() => setIsMenuExpanded((p) => !p)}>
+    <Styled.Container
+      bgWallpaper="assets/background.jpg"
+      onClick={() => setIsMenuExpanded((p) => !p)}
+    >
       <Styled.Navigation
         key={`this-key-is-for-triggering-animation-${isMenuExpanded}`}
       >
