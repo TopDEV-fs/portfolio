@@ -1,9 +1,17 @@
 import styled from 'styled-components';
-
-export const Container = styled.section`
+interface bgWallpaper {
+  bgWallpaper: string;
+}
+export const Container = styled.section<bgWallpaper>`
   display: flex;
   overflow: hidden;
   min-height: 100vh;
+
+  background: ${({
+    bgWallpaper,
+  }) => `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(${bgWallpaper}) center/cover no-repeat
+      fixed`};
 `;
 
 export const Navigation = styled.nav`
@@ -41,10 +49,7 @@ export const Photo = styled.div<Props>`
   z-index: 1;
   width: 70%;
 
-  background: ${({
-    photo,
-  }) => `linear-gradient(to top, #010606, transparent 200%),
-    url(${photo}) center/cover`};
+  background: ${({ photo }) => `url(${photo}) center/cover`};
   /**
    * ----------------------------------------
    * animation fade-in
