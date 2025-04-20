@@ -27,7 +27,7 @@ const HighlightedProjects = (): JSX.Element => {
   const projectFour = highlightedProjects[3];
 
   return (
-    <Styled.Container>
+    <Styled.Container bgWallpaper="/assets/background.jpg">
       {/* NAVIGATION */}
       <Navbar isLogoExpanded={true} />
       {/* HERO */}
@@ -35,9 +35,9 @@ const HighlightedProjects = (): JSX.Element => {
         <Styled.HeroLeftColumn>
           <SectionHeader
             variant={'medium'}
-            headerText={`Selected list of projects`}
+            headerText={`Highlighted Projects`}
             margin={'0'}
-            color={'#2bff88'}
+            color={'#ffffff'}
           />
 
           <PortfolioParagraph
@@ -50,7 +50,7 @@ const HighlightedProjects = (): JSX.Element => {
         </Styled.HeroLeftColumn>
         <Styled.HeroRightColumn>
           <Styled.ImageContainer
-            position={{ top: '0', right: '0' }}
+            position={{ top: '0', left: '0' }}
             className={'laptop-wrapper'}
           >
             <Styled.FloatingImgContainer variant={'laptop'}>
@@ -67,7 +67,7 @@ const HighlightedProjects = (): JSX.Element => {
             </Styled.FloatingImgContainer>
           </Styled.ImageContainer>
           <Styled.ImageContainer
-            position={{ top: '35%', right: '10px' }}
+            position={{ top: '30%', right: '0' }}
             className={'mobile-wrapper'}
           >
             <Styled.FloatingImgContainer variant={'phone'}>
@@ -87,21 +87,7 @@ const HighlightedProjects = (): JSX.Element => {
           <Styled.ImageContainer
             position={{ bottom: '6rem', left: '0' }}
             className={'watch-wrapper'}
-          >
-            <Styled.FloatingImgContainer variant={'watch'}>
-              <Image
-                src={'/assets/portfolio/landing-watch.png'}
-                layout={'fixed'}
-                quality={95}
-                height={200}
-                width={200}
-                objectFit={'contain'}
-                alt={'Laptop with open IDE'}
-                priority
-                className={'watch'}
-              />
-            </Styled.FloatingImgContainer>
-          </Styled.ImageContainer>
+          ></Styled.ImageContainer>
         </Styled.HeroRightColumn>
 
         <ScrollHint />

@@ -15,10 +15,11 @@ export interface Props {
 const Logo = ({ isExpanded }: Props): JSX.Element => {
   return (
     <Styled.Container isExpanded={isExpanded}>
-      <span className={'letter'}>v</span>
-      <span className={'letter'}>o</span>
-      <span className={'main-letter'}>v</span>
-      <span className={'letter'}>a</span>
+      <span className={'letter'}>J</span>
+      <span className={'letter'}>A</span>
+      <span className={'letter'}>M</span>
+      <span className={'letter'}>E</span>
+      <span className={'letter'}>S</span>
       <Link href={'/portfolio'} passHref>
         <Styled.A />
       </Link>

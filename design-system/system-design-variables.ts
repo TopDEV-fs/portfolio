@@ -301,7 +301,7 @@ export type IZindexes = typeof zIndexes;
 const portfolioStyles = {
   bgColor: '#010606',
   secondaryBg: { purple: '#4831d4' },
-  primaryColor: { dark: '#01bf71', light: '#2bff88' },
+  primaryColor: { dark: '#01bf71', light: '#ffffff' },
   text: { light: 'rgba(255, 255, 255, 0.95)', dark: '#000000' },
   resumeColors: {
     accentColor: 'rgb(40,103,178)',

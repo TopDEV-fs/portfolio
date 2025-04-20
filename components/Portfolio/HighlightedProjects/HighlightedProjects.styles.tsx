@@ -4,10 +4,13 @@ import {
   floatingWatchKeyframes,
   floatKeyframes,
 } from '../../../design-system/reusableCss';
-
-export const Container = styled.section`
+interface background {
+  bgWallpaper: string;
+}
+export const Container = styled.section<background>`
   height: 100vh;
-
+  background: ${({ bgWallpaper }) => `url(${bgWallpaper}) center/cover no-repeat
+    fixed`};
   @media ${({ theme }) => theme.media.desktop} {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
