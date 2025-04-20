@@ -50,7 +50,6 @@ const isCollapsedStyles = css`
 
 export const Container = styled.div<Props>`
   font-size: 2.5rem;
-  letter-spacing: -7px;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;

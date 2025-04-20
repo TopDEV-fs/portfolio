@@ -46,7 +46,7 @@ export const Container = styled.button`
   }
 
   .icon-one.active-one .hamburger-one {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(241, 16, 16, 0);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
   }
 
