@@ -183,7 +183,7 @@ const allGradients = {
       45deg,
       #01bf71 0%,
       #2bd2ff 52%,
-      #2bff88 90%
+      #ffffff 90%
     );`,
   rainbow: `linear-gradient(
       45deg,

@@ -81,7 +81,7 @@ const ProjectDesktopSlide = ({
               variant={'small'}
               headerText={projectTitle}
               margin={'0'}
-              color={'#2bff88'}
+              color={'#ffffff'}
               withGradient
             />
 

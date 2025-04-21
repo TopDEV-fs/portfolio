@@ -56,8 +56,6 @@ export const ThirdSlide = styled.div`
     right: 55%;
     width: 700px;
     height: 700px;
-    background: #383838;
-    background: linear-gradient(40deg, #000000 33%, #383838 69%);
     border-radius: 50%;
     animation: ${rollInLeft} 2s cubic-bezier(0.23, 1, 0.32, 1) both;
   }
@@ -69,8 +67,6 @@ export const ThirdSlide = styled.div`
     left: 55%;
     width: 700px;
     height: 700px;
-    background: #383838;
-    background: linear-gradient(40deg, #ffc130 22%, #383838 70%, #000000 89%);
     border-radius: 50%;
     animation: ${rollInRight} 2s cubic-bezier(0.23, 1, 0.32, 1) both;
   }

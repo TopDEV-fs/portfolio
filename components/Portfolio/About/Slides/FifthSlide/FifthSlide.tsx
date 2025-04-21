@@ -11,18 +11,22 @@ import Slide from '../../../Slide/Slide';
  */
 const FifthSlide = (): JSX.Element => {
   return (
-    <Slide bgColor={'#010606'} height={'100vh'} anchorID={'fifth-slide'}>
+    <Slide
+      bgWallpaper={'/assets/background.jpg'}
+      height={'100vh'}
+      anchorID={'fifth-slide'}
+    >
       <Styled.FifthSlide>
         <SectionHeader
           variant={'small'}
-          headerText={'Highlighted milestones'}
+          headerText={'Development Experience'}
           margin={'0'}
-          color={'#2bff88'}
+          color={'#ffffff'}
         />
         <Styled.Milestone variant={'first'}>
           <Styled.MilestoneHeader>
-            <h3>Software Development Project Lead</h3>
-            <time>2023-Present</time>
+            <h3>AI&FullStack Developer</h3>
+            <time>2023-Febuar</time>
           </Styled.MilestoneHeader>
           <h4>Oracle</h4>
           <PortfolioParagraph

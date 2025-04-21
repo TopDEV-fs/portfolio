@@ -1,5 +1,6 @@
 import React from 'react';
 import Iframe from '../../Iframe/Iframe';
+import { VSCODE_GITHUB_URL } from '../../../config/config';
 
 /**
  *Returns embedded VS Code iframe
@@ -9,7 +10,7 @@ import Iframe from '../../Iframe/Iframe';
 const VsCode = (): JSX.Element => {
   return (
     <Iframe
-      iframeSrc={'https://github.com/vovaushenko/vovacodes'}
+      iframeSrc={VSCODE_GITHUB_URL}
       iframeSize={{ width: '100%', height: '100%' }}
       title={'VS Code'}
       style={{

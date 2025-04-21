@@ -13,13 +13,17 @@ import WithSparkles from '../../../WithSparkles/WithSparkles';
  */
 const FirstSlide = (): JSX.Element => {
   return (
-    <Slide bgColor={'#010606'} height={`100vh`} anchorID={'first-slide'}>
+    <Slide
+      bgWallpaper={'/assets/background.jpg'}
+      height={`100vh`}
+      anchorID={'first-slide'}
+    >
       <Styled.FirstSlide id={'first-slide'} className="page first-page">
         <SectionHeader
           variant={'medium'}
           headerText={'Creative Web Developer'}
           margin={'0'}
-          color={'#2bff88'}
+          color={'#ffffff'}
         />
 
         <PortfolioParagraph

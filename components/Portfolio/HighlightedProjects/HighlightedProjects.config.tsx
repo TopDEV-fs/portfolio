@@ -1,9 +1,9 @@
 import React from 'react';
 import {
   SiBootstrap,
-  SiElasticsearch,
+  // SiElasticsearch,
   SiGoogleads,
-  SiJavascript,
+  // SiJavascript,
   SiMongodb,
   SiMysql,
   SiNextdotjs,
@@ -12,8 +12,11 @@ import {
   SiReact,
   SiRedux,
   SiStorybook,
+  SiTailwindcss,
   SiTypescript,
+  SiWebpack,
   SiWordpress,
+  SiRadixui,
 } from 'react-icons/si';
 import { IHighlightedProject } from '../../../types/portfolio';
 import { GITHUB_URL } from '../../../config/config';
@@ -25,7 +28,7 @@ export const useHighlightedProjectsData = (): {
     {
       slideNumberImg: '/assets/portfolio/1.svg',
       projectTitle: 'EVERCARS',
-      projectDescription: `I led the full-stack development of EverCars’ multilingual car rental platform using Next.js, Strapi, and Stripe. I built dynamic car listings, a custom booking flow with online payments, and integrated Google Maps for delivery zones. The relaunch boosted conversions by 3x and significantly improved SEO and performance.`,
+      projectDescription: `I constructed the EverCars car hire website using WordPress, PHP, and Bootstrap and created a responsive and user-friendly interface. I included multi-language support, search engine optimization and Google Ads campaign management to drive traffic and improve conversions. The site saw bookings increase by 3x following launch.`,
       slideHeight: '100vh',
       projectImg: '/assets/portfolio/evercars/logo.png',
       projectMobileImg: '/assets/portfolio/orcl/oracle-cpq.webp',
@@ -49,28 +52,29 @@ export const useHighlightedProjectsData = (): {
     },
     {
       slideNumberImg: '/assets/portfolio/2.svg',
-      projectTitle: 'CX Sales',
-      projectDescription: `I have contributed to the biggest customer facing applications and services of Oracle CX. I prototyped, designed and helped my team to build a Zoom application integration for Oracle CX Sales (CRM Selling System) from scratch. Played a key role in the modernization and re-implementation of biggest Oracle's CRM - CX Sales.
+      projectTitle: 'Care Pulse',
+      projectDescription: `Designed a responsive full-stack web application for healthcare appointment scheduling that enables patients to schedule an appointment and doctors to manage availability. Scally and performantly optimized using the newest Next.js App Router features.
         `,
       slideHeight: '100vh',
-      projectImg: '/assets/portfolio/orcl/orclcloud.png',
-      projectMobileImg: '/assets/portfolio/orcl/cxcloud.webp',
-      liveLink: 'https://www.oracle.com/ca-en/cx/sales/',
+      projectImg: '/assets/portfolio/healthcare/logo-full.svg',
+      projectMobileImg: '/assets/portfolio/healthcare/logo-full.svg',
+      liveLink: 'https://healthcare-nextjs.vercel.app/',
+      githubLink: `${GITHUB_URL}/healthcare-nextjs`,
       projectTechnologies: [
-        'Javascript',
-        'JET',
-        'Web Components',
-        'Service Workers',
-        'Redux',
+        'Next.js',
+        'TypeScript',
+        'Tailwind CSS',
+        'Webpack',
+        'Radix UI',
       ],
 
       slideBgColor: '#010606',
       technologyIcons: [
-        <SiTypescript key={1} className={'tech-icon'} />,
-        <SiJavascript key={2} className={'tech-icon'} />,
-        <SiRedux key={4} className={'tech-icon'} />,
-        <SiMongodb key={5} className={'tech-icon'} />,
-        <SiElasticsearch key={6} className={'tech-icon'} />,
+        <SiNextdotjs key={1} className={'tech-icon'} />,
+        <SiTypescript key={2} className={'tech-icon'} />,
+        <SiTailwindcss key={4} className={'tech-icon'} />,
+        <SiWebpack key={5} className={'tech-icon'} />,
+        <SiRadixui key={6} className={'tech-icon'} />,
       ],
     },
     {

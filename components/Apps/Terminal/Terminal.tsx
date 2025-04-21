@@ -35,9 +35,9 @@ const Terminal = (): JSX.Element => {
     <Styled.Container>
       <Trmnl
         hideTopBar
-        color="#2bff88"
+        color="#ffffff"
         backgroundColor="#010606"
-        barColor="#2bff88"
+        barColor="#ffffff"
         startState={'maximised'}
         style={{ fontWeight: 'bold', fontSize: '1.25rem' }}
         commands={{

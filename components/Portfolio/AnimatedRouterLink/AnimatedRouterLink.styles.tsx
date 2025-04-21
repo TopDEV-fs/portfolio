@@ -8,7 +8,7 @@ const standardStyles = css`
   color: rgb(255, 255, 255, 1);
 `;
 const highlightStyles = css`
-  color: #2bff88;
+  color: #ffffff;
 
   :hover {
     background-image: linear-gradient(
@@ -38,7 +38,7 @@ export const A = styled.a<LinkProps>`
       45deg,
       #01bf71 0%,
       #2bd2ff 52%,
-      #2bff88 90%
+      #ffffff 90%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

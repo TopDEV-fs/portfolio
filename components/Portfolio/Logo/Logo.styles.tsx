@@ -61,7 +61,6 @@ export const Container = styled.div<Props>`
     position: relative;
 
     :before {
-      content: '-';
       position: absolute;
       font-size: 2rem;
       top: -14px;

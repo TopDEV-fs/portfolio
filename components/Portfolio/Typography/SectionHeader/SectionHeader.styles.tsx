@@ -25,7 +25,7 @@ const withGradientStyles = css`
     45deg,
     #01bf71 0%,
     #2bd2ff 52%,
-    #2bff88 90%
+    #ffffff 90%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
