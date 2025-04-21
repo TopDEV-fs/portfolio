@@ -1,16 +1,22 @@
 import React from 'react';
 import {
+  SiBootstrap,
   SiElasticsearch,
+  SiGoogleads,
   SiJavascript,
   SiMongodb,
+  SiMysql,
   SiNextdotjs,
   SiNodedotjs,
+  SiPhp,
   SiReact,
   SiRedux,
   SiStorybook,
   SiTypescript,
+  SiWordpress,
 } from 'react-icons/si';
 import { IHighlightedProject } from '../../../types/portfolio';
+import { GITHUB_URL } from '../../../config/config';
 
 export const useHighlightedProjectsData = (): {
   highlightedProjects: IHighlightedProject[];
@@ -18,27 +24,27 @@ export const useHighlightedProjectsData = (): {
   const highlightedProjects: IHighlightedProject[] = [
     {
       slideNumberImg: '/assets/portfolio/1.svg',
-      projectTitle: 'Oracle CPQ',
-      projectDescription: `I currently lead the frontend development of a modernized version of Oracle CPQ (Configure, Price, Quote). A dynamic application that helps over 500 large customers to configure complex products and services, price them according to the rules and constraints, and generate quotes and proposals.
-        `,
+      projectTitle: 'EVERCARS',
+      projectDescription: `I led the full-stack development of EverCars’ multilingual car rental platform using Next.js, Strapi, and Stripe. I built dynamic car listings, a custom booking flow with online payments, and integrated Google Maps for delivery zones. The relaunch boosted conversions by 3x and significantly improved SEO and performance.`,
       slideHeight: '100vh',
-      projectImg: '/assets/portfolio/orcl/orcl.png',
+      projectImg: '/assets/portfolio/evercars/logo.png',
       projectMobileImg: '/assets/portfolio/orcl/oracle-cpq.webp',
-      liveLink: 'https://www.oracle.com/ca-en/cx/sales/cpq',
+      liveLink: 'https://evercars.com.ua/en/',
       projectTechnologies: [
-        'Javascript',
-        'Web Components',
-        'Service Workers',
-        'Redux',
+        'WordPress',
+        'PHP',
+        'BootStrap',
+        'Google Ads',
+        'MySQL',
       ],
 
       slideBgColor: '#010606',
       technologyIcons: [
-        <SiTypescript key={1} className={'tech-icon'} />,
-        <SiJavascript key={2} className={'tech-icon'} />,
-        <SiRedux key={4} className={'tech-icon'} />,
-        <SiMongodb key={5} className={'tech-icon'} />,
-        <SiElasticsearch key={6} className={'tech-icon'} />,
+        <SiWordpress key={1} className={'tech-icon'} />,
+        <SiPhp key={2} className={'tech-icon'} />,
+        <SiBootstrap key={3} className={'tech-icon'} />,
+        <SiGoogleads key={4} className={'tech-icon'} />,
+        <SiMysql key={5} className={'tech-icon'} />,
       ],
     },
     {
@@ -75,7 +81,7 @@ export const useHighlightedProjectsData = (): {
       slideHeight: '100vh',
       projectImg: '/assets/portfolio/projectOne/SneakerManiacs.png',
       projectMobileImg: '/assets/portfolio/projectOne/sneakerManiacsPhone.png',
-      githubLink: 'https://github.com/vovaushenko/next-multibrand-store',
+      githubLink: `${GITHUB_URL}/next-multibrand-store`,
       liveLink: 'https://sneaker-maniacs.vercel.app/',
       projectTechnologies: [
         'Next.js',
@@ -102,7 +108,7 @@ export const useHighlightedProjectsData = (): {
       slideHeight: '100vh',
       projectImg: '/assets/portfolio/projectTwo/vpsFullHd.png',
       projectMobileImg: '/assets/portfolio/projectTwo/vpsMobile.png',
-      githubLink: 'https://github.com/vovaushenko/next-multibrand-store',
+      githubLink: `${GITHUB_URL}/next-multibrand-store`,
       liveLink: 'https://optics-vps.vercel.app/',
       projectTechnologies: ['Next.js', 'React', 'Redux', 'Mongo DB', 'Express'],
 

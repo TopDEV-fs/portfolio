@@ -7,6 +7,7 @@ import { bindActionCreators, Dispatch } from 'redux';
 import { loadLatestArticles } from '../../store/action-creators/articles-action-creators';
 import { connect } from 'react-redux';
 import AllDevToArticles from '../../components/Portfolio/AllDevToArticles/AllDevToArticles';
+import { FULL_NAME } from '../../config/config';
 
 interface ServerProps {
   title: string;
@@ -34,7 +35,7 @@ export const getStaticProps: GetStaticProps = wrapper.getStaticProps(
 
     return {
       props: {
-        title: 'Vova Ushenko | Articles',
+        title: `${FULL_NAME} | Articles`,
       },
       revalidate: 3600,
     };

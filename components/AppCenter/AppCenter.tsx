@@ -10,6 +10,7 @@ import Bing from '../Apps/Bing/Bing';
 import { useActions } from '../../hooks/useActions';
 import AllAppsModal from '../AllAppsModal/AllAppsModal';
 import { useRouter } from 'next/router';
+import { PROFILE_NAME, SURNAME } from '../../config/config';
 
 /**
  *Renders AppCenter content with search bar, pinned apps and recommended section
@@ -83,8 +84,8 @@ const AppCenter = (): JSX.Element => {
           <Styled.Footer>
             <Avatar
               src={'/assets/avatar.png'}
-              firstName={'vova'}
-              lastName={'ushenko'}
+              firstName={PROFILE_NAME}
+              lastName={SURNAME}
               isActive={false}
               hasBadge={false}
               width={'45px'}

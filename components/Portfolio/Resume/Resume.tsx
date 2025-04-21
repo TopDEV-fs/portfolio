@@ -18,6 +18,15 @@ import { SiLinkedin } from 'react-icons/si';
 import PortfolioParagraph from '../Typography/PortfolioParagraph/PortfolioParagraph';
 import ProfessionalExperience from '../ProfessionalExperience/ProfessionalExperience';
 import Link from 'next/link';
+import {
+  EMAIL,
+  GITHUB_URL,
+  JOB_TITLE,
+  LINKED_IN_URL,
+  PROFILE_NAME,
+  SURNAME,
+  TELE_NUM,
+} from '../../../config/config';
 
 /**
  *Renders resume component
@@ -39,11 +48,11 @@ const Resume = (): JSX.Element => {
               vovacodes.ca
             </Styled.ContactLink>
 
-            <Styled.ContactLink href="mailto: volodymyr.ushenko@gmail.com">
+            <Styled.ContactLink href={`mailto: ${EMAIL}`}>
               <FiMail />
-              hello@vovacodes.ca
+              {EMAIL}
             </Styled.ContactLink>
-            <p>Vancouver, BC, Canada 🇨🇦</p>
+            <p>{PROFILE_NAME}</p>
           </Styled.ContactInfo>
 
           <TextList
@@ -63,16 +72,14 @@ const Resume = (): JSX.Element => {
           {/*HEADER WITH NAME*/}
           <Styled.SummaryHeader>
             <Styled.Name>
-              Vova <span>Ushenko</span>, PhD
+              {PROFILE_NAME} <span>{SURNAME}</span>, PhD
             </Styled.Name>
-            <Styled.Title>
-              Senior Full-Stack Software Engineer | Project Lead
-            </Styled.Title>
+            <Styled.Title>{JOB_TITLE}</Styled.Title>
 
             {/*SOCIAL MEDIA LINKS*/}
             <Styled.SocialLinksWrapper>
               <Styled.SocialMediaLink
-                href={'https://www.linkedin.com/in/vovau/'}
+                href={LINKED_IN_URL}
                 target={'_blank'}
                 rel="noopener"
               >
@@ -80,22 +87,23 @@ const Resume = (): JSX.Element => {
                 Linkedin
               </Styled.SocialMediaLink>
               <Styled.SocialMediaLink
-                href={'https://github.com/vovaushenko'}
+                href={GITHUB_URL}
                 target={'_blank'}
                 rel="noopener"
               >
                 <FiGithub className={'social-media-icon'} />
                 GitHub
               </Styled.SocialMediaLink>
-              <Styled.SocialMediaLink href="mailto: volodymyr.ushenko@gmail.com">
+              <Styled.SocialMediaLink href={`mailto: ${EMAIL}`}>
                 <FiMail className={'social-media-icon'} />
                 Email
               </Styled.SocialMediaLink>
-              <Styled.SocialMediaLink href="tel:+14378861335 ">
+              <Styled.SocialMediaLink href={`tel:${TELE_NUM}`}>
                 <FiPhoneOutgoing className={'social-media-icon'} />
-                +1 604 834 3600
+                {TELE_NUM}
               </Styled.SocialMediaLink>
 
+              {/*Download PART*/}
               <Styled.SocialMediaLink
                 href={'/assets/vova-ushenko-cv.pdf'}
                 download="vova-ushenko-cv.pdf"

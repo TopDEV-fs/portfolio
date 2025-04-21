@@ -5,6 +5,7 @@ import Figma from '../Apps/Figma/Figma';
 import GoogleSearch from '../Apps/GoogleSearch/GoogleSearch';
 import Terminal from '../Apps/Terminal/Terminal';
 import VsCode from '../Apps/VsCode/VsCode';
+import { GITHUB_URL } from '../../config/config';
 
 /**
  * Custom hook to get search modal data, namely top apps and quick searches
@@ -29,7 +30,7 @@ export const useSearchModalConfig = (): {
       id: 2,
       text: 'GitHub',
       icon: '/assets/icons/startmenu/github.svg',
-      action: () => window.open('https://github.com/vovaushenko', '_blank'),
+      action: () => window.open(GITHUB_URL, '_blank'),
       iconSize: { height: 40, width: 40 },
       willOpenWindowWith: null,
     },

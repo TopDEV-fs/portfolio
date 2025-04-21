@@ -7,6 +7,7 @@ import Terminal from '../Apps/Terminal/Terminal';
 import Bing from '../Apps/Bing/Bing';
 import PortfolioLanding from '../Portfolio/PortfolioLanding/PortfolioLanding';
 import PortfolioLayout from '../Portfolio/PortfolioLayout/PortfolioLayout';
+import { FULL_NAME, GITHUB_URL, JOB_TITLE } from '../../config/config';
 
 export const useSystemTrayConfig = (): {
   systemTrayButtons: ISystemTrayButton[];
@@ -77,7 +78,7 @@ export const useSystemTrayConfig = (): {
       action: null,
       alt: 'Explore files',
       willOpenWindowWith: (
-        <PortfolioLayout title={'Vova Ushenko | Full-Stack Web Developer'}>
+        <PortfolioLayout title={`${FULL_NAME} | ${JOB_TITLE}`}>
           <PortfolioLanding />
         </PortfolioLayout>
       ),
@@ -86,7 +87,7 @@ export const useSystemTrayConfig = (): {
       id: 7,
       src: '/assets/icons/startmenu/github.svg',
       size: { width: 34, height: 34 },
-      action: () => window.open('https://github.com/vovaushenko', '_blank'),
+      action: () => window.open(GITHUB_URL, '_blank'),
       alt: 'connect on github',
       willOpenWindowWith: null,
     },

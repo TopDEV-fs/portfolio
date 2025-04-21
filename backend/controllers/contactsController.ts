@@ -19,7 +19,7 @@ export { sendEmail };
 const sendEmail = catchErrors(
   async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
     const { name, email, message } = req.body;
-
+    // console.log(name,email,message,"@@@!@#!@#!@#!@");
     sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
     const msg: MailDataRequired = {

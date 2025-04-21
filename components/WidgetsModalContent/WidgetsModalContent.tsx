@@ -71,12 +71,12 @@ const WidgetsModalContent = (): JSX.Element => {
           .slice(0, 15)
           .map((article, id) => (
             <NewsWidget
-              key={`${article.title}${article.publishedAt}`}
+              key={`${article?.title}${article?.publishedAt}`}
               className={`grid-card-${id + 1}`}
-              newsHeader={article.title!}
-              newsSource={article.source.name}
-              newsLink={article.url!}
-              backgroundImg={article.urlToImage!}
+              newsHeader={article?.title ?? ''}
+              newsSource={article?.source.name}
+              newsLink={article?.url ?? ''}
+              backgroundImg={article?.urlToImage ?? ''}
               cardGradientColor={'rgba(3, 21, 41, 1)'}
             />
           ))}
