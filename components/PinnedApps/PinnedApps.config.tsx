@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import VsCode from '../Apps/VsCode/VsCode';
 import GoogleSearch from '../Apps/GoogleSearch/GoogleSearch';
 import Figma from '../Apps/Figma/Figma';
+import { GITHUB_URL } from '../../config/config';
 
 export const usePinnedAppsConfig = (): { pinnedApps: IPinnedApp[] } => {
   const pinnedApps: IPinnedApp[] = [
@@ -9,7 +10,7 @@ export const usePinnedAppsConfig = (): { pinnedApps: IPinnedApp[] } => {
       id: 1,
       text: 'GitHub',
       icon: '/assets/icons/startmenu/github.svg',
-      action: () => window.open('https://github.com/vovaushenko', '_blank'),
+      action: () => window.open(`${GITHUB_URL}`, '_blank'),
       iconSize: { height: 40, width: 40 },
       willOpenWindowWith: null,
     },

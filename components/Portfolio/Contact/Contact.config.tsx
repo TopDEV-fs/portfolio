@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
-import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import { GITHUB_URL, LINKED_IN_URL } from '../../../config/config';
 
 /**
  * Custom hook to get contact info data
@@ -8,30 +9,30 @@ import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from 'react-icons/fi';
  */
 export const useContactConfig = (): { myContacts: IMyContact[] } => {
   const myContacts: IMyContact[] = [
+    // {
+    //   id: 1,
+    //   icon: <FiTwitter className={'contact-icon'} />,
+    //   text: 'Twitter',
+    //   href: 'https://twitter.com/vova_ush',
+    // },
     {
       id: 1,
-      icon: <FiTwitter className={'contact-icon'} />,
-      text: 'Twitter',
-      href: 'https://twitter.com/vova_ush',
+      icon: <FiGithub className={'contact-icon'} />,
+      text: 'GitHub',
+      href: GITHUB_URL,
     },
     {
       id: 2,
-      icon: <FiGithub className={'contact-icon'} />,
-      text: 'GitHub',
-      href: 'https://github.com/vovaushenko',
-    },
-    {
-      id: 3,
       icon: <FiLinkedin className={'contact-icon'} />,
       text: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/vovau/',
+      href: LINKED_IN_URL,
     },
-    {
-      id: 4,
-      icon: <FiInstagram className={'contact-icon'} />,
-      text: 'LinkedIn',
-      href: 'https://www.instagram.com/vovacodes/',
-    },
+    // {
+    //   id: 4,
+    //   icon: <FiInstagram className={'contact-icon'} />,
+    //   text: 'LinkedIn',
+    //   href: 'https://www.instagram.com/vovacodes/',
+    // },
   ];
 
   return { myContacts };

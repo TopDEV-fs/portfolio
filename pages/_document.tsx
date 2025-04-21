@@ -7,6 +7,7 @@ import Document, {
 } from 'next/document';
 import * as React from 'react';
 import { ServerStyleSheet } from 'styled-components';
+import { FULL_NAME, JOB_TITLE } from '../config/config';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -50,16 +51,16 @@ export default class MyDocument extends Document {
           <link rel="apple-touch-icon" href="/logo.png" />
           <link rel="manifest" href="/app.webmanifest" />
 
-          <meta property="og:title" content="Vova Ushenko" />
-          <meta name="author" content="Vova Ushenko" />
+          <meta property="og:title" content={FULL_NAME} />
+          <meta name="author" content={FULL_NAME} />
           <meta property="og:locale" content="en_US" />
           <meta
             name="description"
-            content="Vova Ushenko | Full-stack Web Developer | Portfolio"
+            content={`${FULL_NAME} | ${JOB_TITLE} | Portfolio`}
           />
           <meta
             property="og:description"
-            content="Vova Ushenko | Full-stack Web Developer | Portfolio"
+            content={`${FULL_NAME} | ${JOB_TITLE} | Portfolio`}
           />
 
           <meta property="og:url" content="https://www.vovacodes.ca/" />

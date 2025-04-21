@@ -12,6 +12,7 @@ import PortfolioLayout from '../Portfolio/PortfolioLayout/PortfolioLayout';
 import { useTypedSelector } from '../../hooks/useTypedSelector';
 import Acknowledgments from '../Acknowledgments/Acknowledgments';
 import CommentsList from '../CommentsList/CommentsList';
+import { FULL_NAME, JOB_TITLE, PROFILE_NAME } from '../../config/config';
 
 /**
  * Custom hook used to get initial configuration for desktop
@@ -48,9 +49,9 @@ export const useDesktopApps = (): {
     },
     {
       id: 3,
-      text: 'Vova ✨',
+      text: `${PROFILE_NAME} ✨`,
       willOpenWindowWith: (
-        <PortfolioLayout title={'Vova Ushenko | Full-Stack Web Developer'}>
+        <PortfolioLayout title={`${FULL_NAME} | ${JOB_TITLE}`}>
           <PortfolioLanding />
         </PortfolioLayout>
       ),

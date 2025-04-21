@@ -30,6 +30,7 @@ const SliderControl = ({ variant, withChevron }: Props): JSX.Element => {
     if (variant === 'brightnessControl') {
       changeScreenBrightness(rangeValue);
     }
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rangeValue, variant]);
 
   return (

@@ -5,6 +5,7 @@ import PortfolioParagraph from '../../../Typography/PortfolioParagraph/Portfolio
 import Slide from '../../../Slide/Slide';
 import Image from 'next/image';
 import WithSparkles from '../../../WithSparkles/WithSparkles';
+import { PROFILE_NAME } from '../../../../../config/config';
 
 /**
  *Renders fourth slide in About Portfolio presentation
@@ -65,7 +66,7 @@ const FourthSlide = (): JSX.Element => {
             <Styled.FloatingImgContainer variant={'person'}>
               <Image
                 src={'/assets/portfolio/work-from-home.svg'}
-                alt={'Vova is working from home'}
+                alt={`${PROFILE_NAME} is working from home`}
                 height={500}
                 width={500}
                 objectFit={'contain'}

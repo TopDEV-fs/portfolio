@@ -3,6 +3,7 @@ import * as Styled from './About.styles';
 import Paragraph from '../Typography/Paragraph/Paragraph';
 import WithSparkles from '../Portfolio/WithSparkles/WithSparkles';
 import Image from 'next/image';
+import { EMAIL, FULL_NAME } from '../../config/config';
 
 /**
  *Renders content for "about" window with basic info about OS
@@ -31,7 +32,7 @@ const About = (): JSX.Element => {
       <Styled.InfoWrapper>
         <Paragraph margin={'1rem 0'}>Next.js Windows OS</Paragraph>
         <Paragraph margin={'1rem 0'}>
-          Built by Vova Ushenko ©2021 All right reserved
+          {`Built by ${FULL_NAME} ©2025 All right reserved`}
         </Paragraph>
         <Paragraph margin={'2rem 0'}>
           This Web Operating System emulation and its user interface are
@@ -48,9 +49,7 @@ const About = (): JSX.Element => {
         <Paragraph margin={'1rem 0'}>
           Feel free to contact
           <WithSparkles color={'rgb(255,215,0)'}>
-            <Styled.A href="mailto:volodymyr.ushenko@gmail.com">
-              hello@vova.codes
-            </Styled.A>
+            <Styled.A href={EMAIL}>{EMAIL}</Styled.A>
           </WithSparkles>
         </Paragraph>
       </Styled.InfoWrapper>

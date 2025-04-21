@@ -12,7 +12,7 @@ import { useTypedSelector } from '../hooks/useTypedSelector';
 import { useMediaQuery } from '@react-hook/media-query';
 import PortfolioLanding from '../components/Portfolio/PortfolioLanding/PortfolioLanding';
 import PortfolioLayout from '../components/Portfolio/PortfolioLayout/PortfolioLayout';
-
+import { PROFILE_NAME, JOB_TITLE } from '../config/config';
 interface ServerProps {
   title: string;
 }
@@ -37,13 +37,14 @@ const Home: NextPage<ServerProps> = ({ title }) => {
       notShowIntroAgain();
       setIsLoading(false);
     }, LOADING_INTRO_DURATION);
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <>
       <Loader isOnScreen={isLoading} loadingDuration={LOADING_INTRO_DURATION} />
       {isOnMobile ? (
-        <PortfolioLayout title={'Vova Ushenko | Full-Stack Web Developer'}>
+        <PortfolioLayout title={`${PROFILE_NAME}|${JOB_TITLE}`}>
           <PortfolioLanding />
         </PortfolioLayout>
       ) : (
@@ -63,7 +64,7 @@ export const getStaticProps: GetStaticProps = wrapper.getStaticProps(
 
     return {
       props: {
-        title: 'Vova Ushenko | Portfolio',
+        title: `${PROFILE_NAME} | Portfolio`,
       },
       revalidate: 3600,
     };
