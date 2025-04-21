@@ -14,14 +14,18 @@ import { PROFILE_NAME } from '../../../../../config/config';
  */
 const FourthSlide = (): JSX.Element => {
   return (
-    <Slide bgColor={'#4831d4'} height={'100vh'} anchorID={'fourth-slide'}>
+    <Slide
+      bgWallpaper={'/assets/background.jpg'}
+      height={'100vh'}
+      anchorID={'fourth-slide'}
+    >
       <Styled.FourthSlide>
         <div className="left-column">
           <SectionHeader
             variant={'small'}
             headerText={'Over the past five years'}
             margin={'0'}
-            color={'#2bff88'}
+            color={'#ffffff'}
           />
           <PortfolioParagraph
             margin={'1rem 0'}

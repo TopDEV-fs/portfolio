@@ -5,9 +5,9 @@ export const SecondSlide = styled.div`
   height: 100%;
 
   .left-column {
-    width: 50%;
+    width: 40%;
     height: 100%;
-    padding: 10rem 7rem;
+    padding: 10rem 2rem;
     display: flex;
 
     h1 {
@@ -18,7 +18,9 @@ export const SecondSlide = styled.div`
   .right-column {
     width: 50%;
     height: 100%;
-    padding: 10rem;
+    padding-right: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   @media ${({ theme }) => theme.media.tablet} {

@@ -15,19 +15,19 @@ Large.args = {
   margin: '0',
   headerText: 'Header',
   variant: 'large',
-  color: '#2bff88',
+  color: '#ffffff',
 };
 export const Medium = Template.bind({});
 Medium.args = {
   margin: '0',
   headerText: 'Header',
   variant: 'medium',
-  color: '#2bff88',
+  color: '#ffffff',
 };
 export const Small = Template.bind({});
 Small.args = {
   margin: '0',
   headerText: 'Header',
   variant: 'small',
-  color: '#2bff88',
+  color: '#ffffff',
 };

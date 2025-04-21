@@ -4,7 +4,10 @@ import SectionHeader from '../../../Typography/SectionHeader/SectionHeader';
 import PortfolioParagraph from '../../../Typography/PortfolioParagraph/PortfolioParagraph';
 import Slide from '../../../Slide/Slide';
 import ActionButton from '../../../ActionButton/ActionButton';
-import { FiBookOpen, FiChevronsRight } from 'react-icons/fi';
+import {
+  //  FiBookOpen,
+  FiChevronsRight,
+} from 'react-icons/fi';
 import { useRouter } from 'next/router';
 
 /**
@@ -17,11 +20,15 @@ const SixthSlide = (): JSX.Element => {
   const redirectToProjects = () => {
     router.push('/portfolio/projects');
   };
-  const redirectToArticles = () => {
-    router.push('/articles');
-  };
+  // const redirectToArticles = () => {
+  //   router.push('/articles');
+  // };
   return (
-    <Slide bgColor={'#010606'} height={'100vh'} anchorID={'sixth-slide'}>
+    <Slide
+      bgWallpaper={'/assets/background.jpg'}
+      height={'100vh'}
+      anchorID={'sixth-slide'}
+    >
       <Styled.SixthSlide>
         <div className="left-column">
           <div className="content-wrapper">
@@ -29,7 +36,7 @@ const SixthSlide = (): JSX.Element => {
               variant={'small'}
               headerText={'I build & create'}
               margin={'0'}
-              color={'#2bff88'}
+              color={'#00b6ff'}
             />
             <PortfolioParagraph
               margin={'2rem 0 4rem 0'}
@@ -51,7 +58,7 @@ const SixthSlide = (): JSX.Element => {
               variant={'small'}
               headerText={'I write & advise'}
               margin={'0'}
-              color={'#2bff88'}
+              color={'#00b6ff'}
             />
             <PortfolioParagraph
               margin={'2rem 0 4rem 0'}
@@ -62,11 +69,11 @@ const SixthSlide = (): JSX.Element => {
               variant={'large'}
               withAnimatedPresence={true}
             />
-            <ActionButton
+            {/* <ActionButton
               buttonText={'Read my articles'}
               icon={<FiBookOpen className="action-icon" />}
               onClick={redirectToArticles}
-            />
+            /> */}
           </div>
         </div>
       </Styled.SixthSlide>

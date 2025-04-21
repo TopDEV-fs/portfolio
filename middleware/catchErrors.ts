@@ -18,6 +18,7 @@ export default function catchErrorsFrom(controller: NextController) {
     req: NextApiRequest,
     res: NextApiResponse
   ): Promise<unknown> => {
+    console.log(req.body, '@@@');
     return controller(req, res).catch((error) => {
       console.error(error);
       return res

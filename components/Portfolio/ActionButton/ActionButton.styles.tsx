@@ -116,7 +116,7 @@ export const BTN = styled.button<Props>`
       45deg,
       #01bf71 0%,
       #2bd2ff 52%,
-      #2bff88 90%
+      #ffffff 90%
     );
     border-color: transparent;
     border-radius: 50%;

@@ -25,7 +25,11 @@ const Contact = (): JSX.Element => {
       <Navbar isLogoExpanded={true} />
 
       {/* Slide # 1*/}
-      <Slide bgColor={'#010606'} height={`100vh`} anchorID={'first-slide'}>
+      <Slide
+        bgWallpaper="/assets/background.jpg"
+        height={`100vh`}
+        anchorID={'first-slide'}
+      >
         <Styled.FirstSlide>
           <SectionHeader variant={'large'} margin={'0'} color={'#fff'}>
             Let`s build something{' '}
@@ -39,7 +43,7 @@ const Contact = (): JSX.Element => {
         dividerHeight={'150px'}
       />
       {/* Slide # 2*/}
-      <Slide bgColor={'#4831d4'} height={`100vh`} anchorID={'first-slide'}>
+      <Slide bgWallpaper={'#4831d4'} height={`100vh`} anchorID={'first-slide'}>
         <Styled.SecondSlide>
           <Styled.ColumnWrapper>
             <Styled.LeftColumn>
@@ -47,7 +51,7 @@ const Contact = (): JSX.Element => {
                 variant={'small'}
                 headerText={`Send me a message!`}
                 margin={'0'}
-                color={'#2bff88'}
+                color={'#ffffff'}
               />
               <PortfolioParagraph
                 margin={'0'}
@@ -76,7 +80,7 @@ const Contact = (): JSX.Element => {
                 variant={'small'}
                 headerText={`Connect`}
                 margin={'0'}
-                color={'#2bff88'}
+                color={'#ffffff'}
               />
             </Styled.RightColumn>
           </Styled.ColumnWrapper>

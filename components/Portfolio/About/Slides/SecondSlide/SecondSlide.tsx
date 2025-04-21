@@ -12,14 +12,18 @@ import WithSparkles from '../../../WithSparkles/WithSparkles';
  */
 const SecondSlide = (): JSX.Element => {
   return (
-    <Slide bgColor={'#4831d4'} height={'100vh'} anchorID={'second-slide'}>
+    <Slide
+      bgWallpaper={'/assets/background.jpg'}
+      height={'100vh'}
+      anchorID={'second-slide'}
+    >
       <Styled.SecondSlide className="page second-page">
         <div className="left-column">
           <SectionHeader
             variant={'medium'}
             headerText={'Design'}
             margin={'0'}
-            color={'#2bff88'}
+            color={'#ffffff'}
           />
 
           <PortfolioParagraph
@@ -39,21 +43,40 @@ const SecondSlide = (): JSX.Element => {
           </PortfolioParagraph>
         </div>
         <div className="right-column">
-          <PortfolioParagraph
-            margin={'0'}
-            paragraphText={
-              '🚀 I have excellent knowledge of modern JS stack for building complex user interfaces for the web platform. In crafting JavaScript applications, I have a strong passion to build elegant, performant, scalable and user-friendly experiences.'
-            }
-            withDarkColor={false}
-            variant={'large'}
-            withAnimatedPresence={true}
-          />
-          <SectionHeader
-            variant={'medium'}
-            headerText={'Engineering'}
-            margin={'0'}
-            color={'#2bff88'}
-          />
+          <>
+            <SectionHeader
+              variant={'medium'}
+              headerText={'Engineering'}
+              margin={'0'}
+              color={'#ffffff'}
+            />
+            <PortfolioParagraph
+              margin={'0'}
+              paragraphText={
+                '🚀 I have excellent knowledge of modern JS stack for building complex user interfaces for the web platform. In crafting JavaScript applications, I have a strong passion to build elegant, performant, scalable and user-friendly experiences.'
+              }
+              withDarkColor={false}
+              variant={'large'}
+              withAnimatedPresence={true}
+            />
+          </>
+          <>
+            <SectionHeader
+              variant={'medium'}
+              headerText={'AI Integration'}
+              margin={'0'}
+              color={'#ffffff'}
+            />
+            <PortfolioParagraph
+              margin={'0'}
+              paragraphText={
+                'Experienced in integrating advanced AI capabilities into web applications using modern frameworks like React.js, Next.js, and APIs from OpenAI and LangChain. Skilled at designing and implementing intelligent features such as conversational agents, task automation, recommendation systems, and real-time AI responses.'
+              }
+              withDarkColor={false}
+              variant={'large'}
+              withAnimatedPresence={true}
+            />
+          </>
         </div>
       </Styled.SecondSlide>
     </Slide>

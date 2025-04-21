@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as Styled from './About.styles';
-import WaveDivider from '../WaveDivider/WaveDivider';
+// import WaveDivider from '../WaveDivider/WaveDivider';
 import Navbar from '../Navbar/Navbar';
 import { useIntersectionObserver } from '../../../hooks/useIntersectionObserver';
 import SecondSlide from './Slides/SecondSlide/SecondSlide';
 import ThirdSlide from './Slides/ThirdSlide/ThirdSlide';
 import FourthSlide from './Slides/FourthSlide/FourthSlide';
-import FifthSlide from './Slides/FifthSlide/FifthSlide';
+// import FifthSlide from './Slides/FifthSlide/FifthSlide';
 import SixthSlide from './Slides/SixthSlide/SixthSlide';
 import FirstSlide from './Slides/FirstSlide/FirstSlide';
 
@@ -30,33 +30,18 @@ const About = (): JSX.Element => {
       <Navbar isLogoExpanded={isLogoExpanded} />
       {/*   FIRST SLIDE   */}
       <FirstSlide />
-      <WaveDivider
-        waveImg={'/assets/portfolio/blob-1.svg'}
-        dividerHeight={'150px'}
-      />
       {/*THIS EMPTY DIV IS USED TO TOGGLE COLLAPSE EFFECT OF LOGO*/}
-      <div ref={ref} />
       {/*   SECOND SLIDE   */}
       <SecondSlide />
-      <WaveDivider
-        waveImg={'/assets/portfolio/blob-2.svg'}
-        dividerHeight={'200px'}
-      />
-
+      <div ref={ref} />
       {/*   THIRD SLIDE   */}
       <ThirdSlide />
-      <WaveDivider
-        waveImg={'/assets/portfolio/blob-1.svg'}
-        dividerHeight={'200px'}
-      />
       {/*   FOURTH SLIDE   */}
       <FourthSlide />
-      <WaveDivider
-        waveImg={'/assets/portfolio/blob-2.svg'}
-        dividerHeight={'200px'}
-      />
       {/*   FIFTH SLIDE   */}
-      <FifthSlide />
+
+      {/* <FifthSlide /> */}
+
       {/*   SIXTH SLIDE   */}
       <SixthSlide />
     </Styled.Container>

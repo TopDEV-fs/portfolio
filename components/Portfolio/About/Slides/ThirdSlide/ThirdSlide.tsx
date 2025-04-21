@@ -21,14 +21,18 @@ const ThirdSlide = (): JSX.Element => {
   } = useAboutConfig();
 
   return (
-    <Slide bgColor={'#010606'} height={'100vh'} anchorID={'third-slide'}>
+    <Slide
+      bgWallpaper={'/assets/background.jpg'}
+      height={'100vh'}
+      anchorID={'third-slide'}
+    >
       <Styled.ThirdSlide id={'third-slide'}>
         <div className="skills-wrapper">
           <SectionHeader
             variant={'small'}
             headerText={'Skills'}
             margin={'0'}
-            color={'#2bff88'}
+            color={'#ffffff'}
           />
           <PortfolioParagraph
             margin={'0'}
@@ -45,7 +49,7 @@ const ThirdSlide = (): JSX.Element => {
                 variant={'extraSmall'}
                 headerText={'Frontend'}
                 margin={'0'}
-                color={'#2bff88'}
+                color={'#ffffff'}
               />
               <ul className={'icon-skills'}>
                 {frontendSkills.map((skill) => (
@@ -75,7 +79,7 @@ const ThirdSlide = (): JSX.Element => {
                 variant={'extraSmall'}
                 headerText={'Backend'}
                 margin={'0'}
-                color={'#2bff88'}
+                color={'#ffffff'}
               />
               <ul className={'icon-skills'}>
                 {backendSkills.map((skill) => (

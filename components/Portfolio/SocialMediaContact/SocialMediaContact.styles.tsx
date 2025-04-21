@@ -11,7 +11,7 @@ export const Container = styled.a`
 
   .contact-icon {
     font-size: 2.5rem;
-    color: #2bff88;
+    color: #ffffff;
     animation: ${rollInRight} 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
   }
 
@@ -55,7 +55,7 @@ export const Container = styled.a`
     top: -7px;
     left: -7px;
     padding: 7px;
-    box-shadow: 0 0 0 4px #2bff88;
+    box-shadow: 0 0 0 4px #ffffff;
     transition: transform 0.2s, opacity 0.2s;
     transform: scale(0.8);
     opacity: 0;
