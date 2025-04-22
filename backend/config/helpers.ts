@@ -9,6 +9,7 @@ export { connectWithDB };
  *@function connectWithDB
  *@instantiates connection with MongoDB
  */
+
 const connectWithDB = (): void => {
   if (mongoose.connection.readyState >= 1) {
     return;
