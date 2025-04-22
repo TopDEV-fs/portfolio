@@ -1,16 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import type { ComponentType } from 'react';
-import dynamic from 'next/dynamic';
 import * as Styled from './Loader.styles';
 import Logo from '../Portfolio/Logo/Logo';
 
-//eslint-disable-next-line @typescript-eslint/no-explicit-any
-const StarfieldAnimation = dynamic(
-  () => import('react-starfield-animation') as Promise<ComponentType<any>>,
-  {
-    ssr: false,
-  }
-);
 export interface Props {
   isOnScreen: boolean;
   loadingDuration: number;
@@ -32,14 +23,6 @@ const Loader = ({ isOnScreen, loadingDuration }: Props): JSX.Element => {
   }, [loadingDuration]);
   return (
     <Styled.Container isOnScreen={isOnScreen} loadingDuration={loadingDuration}>
-      <StarfieldAnimation
-        style={{
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-        }}
-      />
-
       <Logo isExpanded={isLogoExpanded} />
       <Styled.TextContainer>
         <Styled.ScrollText>
