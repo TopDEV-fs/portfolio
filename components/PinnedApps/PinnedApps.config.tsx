@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import VsCode from '../Apps/VsCode/VsCode';
 import GoogleSearch from '../Apps/GoogleSearch/GoogleSearch';
-import Figma from '../Apps/Figma/Figma';
+// import Figma from '../Apps/Figma/Figma';
 import { GITHUB_URL } from '../../config/config';
 
 export const usePinnedAppsConfig = (): { pinnedApps: IPinnedApp[] } => {
@@ -78,16 +78,16 @@ export const usePinnedAppsConfig = (): { pinnedApps: IPinnedApp[] } => {
       iconSize: { height: 40, width: 40 },
       willOpenWindowWith: null,
     },
+    // {
+    //   id: 10,
+    //   text: 'Figma',
+    //   icon: '/assets/icons/startmenu/figma.png',
+    //   action: null,
+    //   iconSize: { height: 38, width: 38 },
+    //   willOpenWindowWith: <Figma />,
+    // },
     {
       id: 10,
-      text: 'Figma',
-      icon: '/assets/icons/startmenu/figma.png',
-      action: null,
-      iconSize: { height: 38, width: 38 },
-      willOpenWindowWith: <Figma />,
-    },
-    {
-      id: 11,
       text: 'Photoshop',
       icon: '/assets/icons/startmenu/photoshop.svg',
       action: null,
@@ -95,7 +95,7 @@ export const usePinnedAppsConfig = (): { pinnedApps: IPinnedApp[] } => {
       willOpenWindowWith: null,
     },
     {
-      id: 12,
+      id: 11,
       text: 'Squoosh',
       icon: '/assets/icons/startmenu/squoosh.svg',
       action: null,
@@ -103,7 +103,7 @@ export const usePinnedAppsConfig = (): { pinnedApps: IPinnedApp[] } => {
       willOpenWindowWith: null,
     },
     {
-      id: 13,
+      id: 12,
       text: 'Firefox',
       icon: '/assets/icons/startmenu/firefox-nightly.svg',
       action: null,
@@ -111,7 +111,7 @@ export const usePinnedAppsConfig = (): { pinnedApps: IPinnedApp[] } => {
       willOpenWindowWith: null,
     },
     {
-      id: 14,
+      id: 13,
       text: 'Chrome',
       icon: '/assets/icons/startmenu/chrome-canary.svg',
       action: null,
@@ -119,7 +119,7 @@ export const usePinnedAppsConfig = (): { pinnedApps: IPinnedApp[] } => {
       willOpenWindowWith: <GoogleSearch />,
     },
     {
-      id: 15,
+      id: 14,
       text: 'Chrome',
       icon: '/assets/icons/startmenu/chrome.svg',
       action: null,
@@ -127,7 +127,7 @@ export const usePinnedAppsConfig = (): { pinnedApps: IPinnedApp[] } => {
       willOpenWindowWith: <GoogleSearch />,
     },
     {
-      id: 16,
+      id: 15,
       text: 'Edge',
       icon: '/assets/icons/startmenu/icons8-microsoft-edge.svg',
       action: null,
@@ -135,7 +135,7 @@ export const usePinnedAppsConfig = (): { pinnedApps: IPinnedApp[] } => {
       willOpenWindowWith: <GoogleSearch />,
     },
     {
-      id: 17,
+      id: 16,
       text: 'Zoom',
       icon: '/assets/icons/startmenu/zoom.png',
       action: null,
@@ -143,7 +143,7 @@ export const usePinnedAppsConfig = (): { pinnedApps: IPinnedApp[] } => {
       willOpenWindowWith: null,
     },
     {
-      id: 18,
+      id: 17,
       text: 'Skype',
       icon: '/assets/icons/startmenu/skype.png',
       action: null,

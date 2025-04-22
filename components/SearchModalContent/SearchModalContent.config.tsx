@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { FiCloud, FiInfo } from 'react-icons/fi';
 import { SiNextdotjs, SiReact } from 'react-icons/si';
-import Figma from '../Apps/Figma/Figma';
+// import Figma from '../Apps/Figma/Figma';
 import GoogleSearch from '../Apps/GoogleSearch/GoogleSearch';
 import Terminal from '../Apps/Terminal/Terminal';
 import VsCode from '../Apps/VsCode/VsCode';
@@ -43,17 +43,17 @@ export const useSearchModalConfig = (): {
       willOpenWindowWith: <VsCode />,
     },
 
-    {
-      id: 4,
-      text: 'Figma',
-      icon: '/assets/icons/startmenu/figma.png',
-      action: null,
-      iconSize: { height: 38, width: 38 },
-      willOpenWindowWith: <Figma />,
-    },
+    // {
+    //   id: 4,
+    //   text: 'Figma',
+    //   icon: '/assets/icons/startmenu/figma.png',
+    //   action: null,
+    //   iconSize: { height: 38, width: 38 },
+    //   willOpenWindowWith: <Figma />,
+    // },
 
     {
-      id: 5,
+      id: 4,
       text: 'Edge',
       icon: '/assets/icons/startmenu/icons8-microsoft-edge.svg',
       action: null,

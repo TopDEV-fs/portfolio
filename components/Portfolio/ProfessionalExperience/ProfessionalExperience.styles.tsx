@@ -14,14 +14,14 @@ interface Props {
 
 export const Company = styled.h4<Props>`
   color: ${({ theme }) => theme.portfolio.resumeColors.accentColor};
-  font-size: 1rem;
+  font-size: 2rem;
   position: relative;
 
   &:before {
     content: '';
     display: block;
     height: 1.5rem;
-    width: 1.5rem;
+    width: 4em;
     background-image: ${({ companyImg }) => `url(${companyImg})`};
     background-size: contain;
     background-repeat: no-repeat;
