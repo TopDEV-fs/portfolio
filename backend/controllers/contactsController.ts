@@ -3,6 +3,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import { StatusCodes } from 'http-status-codes';
 import sgMail from '@sendgrid/mail';
 import { MailDataRequired } from '@sendgrid/helpers/classes/mail';
+import { EMAIL } from '../../config/config';
 /**
  * @EXPORTS
  */
@@ -19,12 +20,12 @@ export { sendEmail };
 const sendEmail = catchErrors(
   async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
     const { name, email, message } = req.body;
-    // console.log(name,email,message,"@@@!@#!@#!@#!@");
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
+    console.log(name, email, message, '@@@!@#!@#!@#!@');
+    sgMail.setApiKey(process.env.API_KEY!);
 
     const msg: MailDataRequired = {
-      to: process.env.GOOGLE_EMAIL_ADDRESS!,
-      from: process.env.GOOGLE_EMAIL_ADDRESS!,
+      to: EMAIL!,
+      from: email!,
       subject: `Message from ${name}`,
       html: `<h1>${name}</h1>\n 
 			<h3>left message:</h3> \n

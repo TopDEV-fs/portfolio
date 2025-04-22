@@ -113,132 +113,92 @@ export const otherSkills: { text: string; iconUrl: string }[] = [
 export const professionalExperience: IProfessionalExperience[] = [
   {
     variant: 'withResponsibilities',
-    company: 'Oracle',
-    companyImg: '/assets/portfolio/oracle-logo.png',
-    role: 'Software Development Project Lead',
+    company: 'Dorascribe Inc',
+    companyImg: '/assets/portfolio/Dorascribe.png',
+    role: 'Senior Full Stack Engineer',
     shortSummary:
-      'I currently lead the frontend development of a modernized version of Oracle CPQ (Configure, Price, Quote). A dynamic application that helps over 500 large customers to configure complex products and services, price them according to the rules and constraints, and generate quotes and proposals.',
-    timeFrame: '2023-Present',
+      'As a Senior Full Stack Engineer at Dorascribe Inc (Apr 2023 – Feb 2025), I led front-end development using React.js, Angular.js, TypeScript, and modern CSS frameworks, cutting dev time by 20%. I contributed to Agile sprints with a 95% on-time delivery rate, mentored junior developers in React/Next.js, and boosted productivity by 40% through AI-assisted tools like Cursor and ChatGPT.',
+    timeFrame: 'Apr 2023 - Feb 2025',
     responsibilities: [
       {
-        text: '"Outstanding Contribution" award for the contribution to the Oracle CPQ project',
-        iconUrl: '/assets/portfolio/star.svg',
-        url: '/assets/portfolio/oracle-award.pdf',
-      },
-      {
-        text: 'Key role in re-implementation of Oracle CPQ',
-        iconUrl: '/assets/portfolio/check.svg',
-        url: 'https://www.oracle.com/ca-en/cx/sales/cpq/',
-      },
-      {
-        text: 'Improved peformance and load time of the application by over 50% targeting Core Web Vitals',
+        text: 'Worked together with UI/UX teams to create the UI using React.js, Angular.js, TypeScript, CSS3, SASS, Tailwind CSS, and jQuery, reducing front-end development time by 20%.',
         iconUrl: '/assets/portfolio/check.svg',
       },
       {
-        text: 'Built migration tools for helping customers to seamlessly migrate from legacy CPQ to the new version',
+        text: 'Experience with 8 unique coding languages, including HTML5/CSS3, JavaScript, React, jQuery, Angular, and TypeScript.',
+        iconUrl: '/assets/portfolio/check.svg',
+      },
+      {
+        text: 'Participated in Agile development processes, effectively contributing to bi-weekly sprints and delivering 95% of assigned tasks on time.',
+        iconUrl: '/assets/portfolio/check.svg',
+      },
+      {
+        text: 'Improved technical check-ins and code reviews, providing mentorship and guidance to 3 team members and advancing their React and Next.js proficiency.',
+        iconUrl: '/assets/portfolio/check.svg',
+      },
+      {
+        text: 'Used AI-assisted development tools such as Cursor, Claude, and ChatGPT to enhance development speed and improve code quality, resulting in a 40% increase in productivity.',
         iconUrl: '/assets/portfolio/check.svg',
       },
     ],
   },
   {
     variant: 'withResponsibilities',
-    company: 'Oracle',
-    companyImg: '/assets/portfolio/oracle-logo.png',
-    role: 'Senior Software Engineer',
-    shortSummary: `As a senior engineer, I have contributed to the biggest customer facing applications and services of Oracle CX. I prototyped, designed and helped my team to build a Zoom application integration for Oracle CX Sales (CRM Selling System) from scratch. Played a key role in the modernization and re-implementation of biggest Oracle's CRM - CX Sales.`,
-    timeFrame: '2021-2023',
+    company: 'Powtoon',
+    companyImg: '/assets/portfolio/potwoon.svg',
+    role: 'Full Stack Developer',
+    shortSummary: `At Powtoon (Sep 2020 - Dec 2022), I led front-end modernization using Next.js, React Hooks, and TypeScript, cutting API response times by 25% and boosting SEO-driven traffic by 10%. I ensured seamless integration of RESTful APIs and GraphQL, improved code quality through strict typing, and collaborated with global teams across Brazil, Germany, and Poland.`,
+    timeFrame: 'Sep 2020 - Dec 2022',
     responsibilities: [
       {
-        text: 'Key contribution to the modernization of the biggest Oracle CRM - CX Sales',
+        text: 'Architected and delivered a sophisticated TypeScript application, reducing code errors by 25% and enhancing the code quality through strict type checking.',
         iconUrl: '/assets/portfolio/check.svg',
-        url: 'https://www.oracle.com/ca-en/cx/sales/',
+        // url: 'https://www.oracle.com/ca-en/cx/sales/',
       },
       {
-        text: 'Architeched and built a dynamic application in embedded Zoom environment for Oracle CX Sales CRM',
-        iconUrl: '/assets/portfolio/check.svg',
-      },
-      {
-        text: 'Helped to identify and fix performance bottlenecks in the modernized application',
+        text: 'Cooperated with back-end developers to ensure seamless integration of RESTful APIs, GraphQL,and AJAX, resulting in a 30% reduction in data retrieval times.',
         iconUrl: '/assets/portfolio/check.svg',
       },
       {
-        text: 'Prototyped and build a number of POC applications for R&D at Oracle',
+        text: 'Led front-end architecture modernization with Next.js, React Hooks, TypeScript, and GraphQL subscriptions, reducing API response time by 25% and enhancing user experience with real-time updates.',
+        iconUrl: '/assets/portfolio/check.svg',
+      },
+      {
+        text: "Improved site speed and website's SEO performance through the server-side rendering of Next.js and optimized HTML5 and CSS3 practices, resulting in a 10% increase in organic search traffic within six months.",
+        iconUrl: '/assets/portfolio/check.svg',
+      },
+      {
+        text: 'United with design, product, backend, and testing teams, and coordinated with 7 developers across Brazil, Germany, and Poland.',
         iconUrl: '/assets/portfolio/check.svg',
       },
     ],
   },
   {
     variant: 'withResponsibilities',
-    company: 'Chernivtsi National University',
-    companyImg: '/assets/portfolio/uchnu.png',
-    role: 'Full-stack Developer (Contractor)',
+    company: 'FishAngler',
+    companyImg: '/assets/portfolio/FishAngler.svg',
+    role: 'Frontend Developer',
     shortSummary:
-      'I worked at Chernivtsi National University on a number of educational and Web projects as a front and back end developer. I architected and constructed solutions daily used by tens of thousands of students and thousands of employees.',
-    timeFrame: '2019-2021',
+      'Worked on 3 different applications - Community Web Portal, Fishing Map Web Portal, and Fishing Map Mobile Application. Successfully engaged 1.5 million users, primarily targeting fishers based in Florida, to enhance community engagement.',
+    timeFrame: 'Oct 2017 - Jul 2020',
     responsibilities: [
       {
-        text: 'Use bleeding-edge JavaScript solutions to deliver the best imaginable user experience',
+        text: 'Revamped legacy PHP architecture into a microservices-based Next.js solution, reducing downtime by 60% and increasing user retention by 25%.',
         iconUrl: '/assets/portfolio/check.svg',
       },
       {
-        text: 'Construct scalable, performant and inclusive Web solutions for customers.',
+        text: 'Leveraged React.js, Next.js, TypeScript, Tailwind CSS, and Storybook for designing and building an intuitive MVP from Figma designs, resulting in a sleek user interface with a development time reduction of 25%.',
         iconUrl: '/assets/portfolio/check.svg',
       },
       {
-        text: 'Employ the best practices in developing and testing software',
+        text: 'Optimized 45+ web pages by using React.js techniques such as component memorization and lazy loading of images.',
         iconUrl: '/assets/portfolio/check.svg',
       },
       {
-        text: 'Supervise, mentor and advise junior colleagues.',
+        text: 'Improved data caching and load balancing, slashing query response times by 40% across 7,000+ real-time property listings.',
         iconUrl: '/assets/portfolio/check.svg',
       },
     ],
-  },
-  {
-    variant: 'withResponsibilities',
-    company: 'Chernivtsi National University',
-    companyImg: '/assets/portfolio/uchnu.png',
-    role: 'Applied Scientist',
-    shortSummary:
-      'I worked in an interdisplinary international research team on the development of cutting-edge medical image processing techniques. I have published a number of papers in high-impact journals and conferences.',
-    timeFrame: '2016-2019',
-    responsibilities: [
-      {
-        text: 'Google Scholar Profile',
-        iconUrl: '/assets/portfolio/check.svg',
-        url: 'https://scholar.google.ca/citations?user=Wu7U4yoAAAAJ&hl=en&oi=ao',
-      },
-      {
-        text: 'Publication in Nature | Scientific Reports',
-        iconUrl: '/assets/portfolio/quote.svg',
-        url: 'https://www.nature.com/articles/s41598-021-83986-4',
-      },
-    ],
-  },
-  {
-    variant: 'withResponsibilities',
-    company: 'University of Oulu, Finland',
-    companyImg: '/assets/portfolio/uoulu.png',
-    role: 'Postdoc Research Scientist',
-    shortSummary:
-      'Participated in projects centered on the development of non-invasive cancer-detection algorithms. During the projects, I\n' +
-      'expanded my horizons in machine learning and learned various image processing algorithms and methods.',
-    timeFrame: '2017 - 2019',
-    responsibilities: [
-      {
-        text: 'Publication in Nature | Scientific Reports',
-        iconUrl: '/assets/portfolio/quote.svg',
-        url: 'https://www.nature.com/articles/s41598-021-83986-4',
-      },
-    ],
-  },
-  {
-    variant: 'simple',
-    company: 'CNRS, Ecole Polytechnique, France',
-    companyImg: '/assets/portfolio/uecole.png',
-    role: 'Postdoc Research Scientist',
-    shortSummary: `This project was supported by the European Union's Horizon research and innovation programme under the Marie Skłodowska-Curie grant agreement and was aimed on the development of cutting-edge medical image processing techniques`,
-    timeFrame: '2016 - 2017',
   },
 ];
 

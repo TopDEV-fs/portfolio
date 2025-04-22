@@ -45,7 +45,7 @@ const Resume = (): JSX.Element => {
               rel="noopener"
             >
               <FiGlobe />
-              vovacodes.ca
+              {`${PROFILE_NAME}'s personal site`}
             </Styled.ContactLink>
 
             <Styled.ContactLink href={`mailto: ${EMAIL}`}>
@@ -105,8 +105,8 @@ const Resume = (): JSX.Element => {
 
               {/*Download PART*/}
               <Styled.SocialMediaLink
-                href={'/assets/vova-ushenko-cv.pdf'}
-                download="vova-ushenko-cv.pdf"
+                href={'/assets/Nguyen.pdf'}
+                download="Nguyen.pdf"
               >
                 <FiDownload className={'social-media-icon'} />
                 Download CV
@@ -119,14 +119,12 @@ const Resume = (): JSX.Element => {
               <Styled.ResumeHeader>Summary</Styled.ResumeHeader>
               <PortfolioParagraph
                 margin={'0'}
-                paragraphText={`Accomplished, highly-qualified, and results-driven Software Engineer
-              with over 5 years of proven hands-on experience in designing,
-              building, debugging, and implementing performant and scalable
-              web applications. Can function well under time-critical conditions
-              in fast-paced environments. Equipped with excellent work ethics
-              and possesses a strong sense of leadership with a commendable
-              record of accomplishment and dependability, combined with
-              integrity.`}
+                paragraphText={`AI-Focused Full Stack Professional with 8+ years of experience in both enterprise and startup
+                  environments. Proficient in JavaScript, React.js, Next.js, Angular.js, Node.js, Python, FastAPI, Flask,
+                  NLP, LLMs in full stack web application development. Mostly worked in AI-Driven Product, start-up
+                  MVP, AI-SaaS Platforms. Passionate about challenging the status quo and writing a unique story in my
+                  developer diary.
+                  `}
                 withDarkColor={true}
                 variant={'medium'}
                 withAnimatedPresence={false}
@@ -157,7 +155,7 @@ const Resume = (): JSX.Element => {
             <p>
               Links to some of my projects and work can be found on{' '}
               <Link href={'/portfolio/projects'}>
-                vovaushenko.dev/portfolio/projects
+                {`${PROFILE_NAME}/portfolio/projects`}
               </Link>{' '}
               and details can be provided upon request via a scheduled demo
               call.
@@ -166,35 +164,12 @@ const Resume = (): JSX.Element => {
 
           {/* EDUCATION */}
           <Styled.ResumeHeader>Education</Styled.ResumeHeader>
-
           <Styled.EducationDetails>
             <h4>
-              PhD
-              <span>Bioinformatics | Biomedical Engineering</span>
+              Bachelor&apos;s degree, Computer Engineering
+              <span>Computer Programming</span>
             </h4>
-            <Styled.University>
-              Taras Shevchenko National University of Kyiv
-            </Styled.University>
-          </Styled.EducationDetails>
-
-          <Styled.EducationDetails>
-            <h4>
-              Master of Computer Engineering
-              <span>Advanced Computer Networks</span>
-            </h4>
-            <Styled.University>
-              Chernivtsi National University
-            </Styled.University>
-          </Styled.EducationDetails>
-
-          <Styled.EducationDetails>
-            <h4>
-              Bachelor of Computer Engineering
-              <span>Computer Networking</span>
-            </h4>
-            <Styled.University>
-              Chernivtsi National University
-            </Styled.University>
+            <Styled.University>West Virginia University</Styled.University>
           </Styled.EducationDetails>
         </Styled.RightColumn>
       </Styled.ResumeWrapper>

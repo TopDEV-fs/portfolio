@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import Resume from '../Portfolio/Resume/Resume';
 import { useRouter } from 'next/router';
 import Terminal from '../Apps/Terminal/Terminal';
+import { LINKED_IN_URL } from '../../config/config';
 
 /**
  * Custom hook that returns prepared recommended apps config
@@ -18,7 +19,7 @@ export const useRecommendedConfig = (): {
       fileName: 'LinkedIn',
       details: 'Connect on Linkedin',
       icon: '/assets/icons/recommended/linkedin.svg',
-      action: () => window.open('https://www.linkedin.com/in/vovau/', '_blank'),
+      action: () => window.open(LINKED_IN_URL, '_blank'),
       iconSize: { height: 44, width: 44 },
       willOpenWindowWith: null,
     },
@@ -49,15 +50,15 @@ export const useRecommendedConfig = (): {
       iconSize: { height: 40, width: 40 },
       willOpenWindowWith: null,
     },
-    {
-      id: 5,
-      fileName: 'Twitter',
-      details: 'Connect on Twitter',
-      icon: '/assets/icons/recommended/twitter.svg',
-      action: () => window.open('https://twitter.com/vova_ush', '_blank'),
-      iconSize: { height: 40, width: 40 },
-      willOpenWindowWith: null,
-    },
+    // {
+    //   id: 5,
+    //   fileName: 'Twitter',
+    //   details: 'Connect on Twitter',
+    //   icon: '/assets/icons/recommended/twitter.svg',
+    //   action: () => window.open('https://twitter.com/vova_ush', '_blank'),
+    //   iconSize: { height: 40, width: 40 },
+    //   willOpenWindowWith: null,
+    // },
     {
       id: 6,
       fileName: 'Terminal',

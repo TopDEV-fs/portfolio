@@ -1,6 +1,5 @@
 import React from 'react';
 import { IDesktopApp } from '../../types/ui/desktop-app';
-import Figma from '../Apps/Figma/Figma';
 import VsCode from '../Apps/VsCode/VsCode';
 import Likes from '../Likes/Likes';
 import { useRouter } from 'next/router';
@@ -13,6 +12,8 @@ import { useTypedSelector } from '../../hooks/useTypedSelector';
 import Acknowledgments from '../Acknowledgments/Acknowledgments';
 import CommentsList from '../CommentsList/CommentsList';
 import { FULL_NAME, JOB_TITLE, PROFILE_NAME } from '../../config/config';
+import GoogleSearch from '../Apps/GoogleSearch/GoogleSearch';
+// import Figma from '../Apps/Figma/Figma';
 
 /**
  * Custom hook used to get initial configuration for desktop
@@ -31,10 +32,10 @@ export const useDesktopApps = (): {
   const initialDesktopAppsList: IDesktopApp[] = [
     {
       id: 1,
-      text: 'Figma',
-      willOpenWindowWith: <Figma />,
+      text: 'Chrome',
+      willOpenWindowWith: <GoogleSearch />,
       variant: 'desktop',
-      iconSrc: '/assets/icons/startmenu/figma.png',
+      iconSrc: '/assets/icons/startmenu/chrome.svg',
       iconSize: { width: 40, height: 40 },
       action: null,
     },
@@ -135,6 +136,15 @@ export const useDesktopApps = (): {
       iconSize: { width: 40, height: 40 },
       action: null,
     },
+    // {
+    //   id: 12,
+    //   text: 'Figma',
+    //   willOpenWindowWith: <Figma />,
+    //   variant: 'desktop',
+    //   iconSrc: '/assets/icons/startmenu/figma.png',
+    //   iconSize: { width: 40, height: 40 },
+    //   action: null,
+    // },
   ];
   // Here we dynamically create copies of compressed apps. By clicking compress, user adds app to global list of compressed in redux
   // Then we filter out apps that should be compressed by their name (filter), and next we map over them and change their text, icon and other params

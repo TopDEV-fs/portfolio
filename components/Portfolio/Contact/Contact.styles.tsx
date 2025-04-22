@@ -53,7 +53,7 @@ export const ColumnWrapper = styled.div`
 `;
 
 export const LeftColumn = styled.div`
-  flex: 0.8;
+  flex: 0.7;
   display: flex;
   align-items: center;
   justify-content: center;

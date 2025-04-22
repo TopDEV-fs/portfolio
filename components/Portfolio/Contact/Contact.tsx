@@ -7,7 +7,7 @@ import ScrollHint from '../ScrollHint/ScrollHint';
 import { useContactConfig } from './Contact.config';
 import SocialMediaContact from '../SocialMediaContact/SocialMediaContact';
 import ContactForm from '../ContactForm/ContactForm';
-import WaveDivider from '../WaveDivider/WaveDivider';
+// import WaveDivider from '../WaveDivider/WaveDivider';
 import Navbar from '../Navbar/Navbar';
 import WithSparkles from '../WithSparkles/WithSparkles';
 
@@ -38,12 +38,12 @@ const Contact = (): JSX.Element => {
           <ScrollHint />
         </Styled.FirstSlide>
       </Slide>
-      <WaveDivider
-        waveImg={'/assets/portfolio/blob-1.svg'}
-        dividerHeight={'150px'}
-      />
       {/* Slide # 2*/}
-      <Slide bgWallpaper={'#4831d4'} height={`100vh`} anchorID={'first-slide'}>
+      <Slide
+        bgWallpaper={'/assets/background.jpg'}
+        height={`100vh`}
+        anchorID={'first-slide'}
+      >
         <Styled.SecondSlide>
           <Styled.ColumnWrapper>
             <Styled.LeftColumn>
