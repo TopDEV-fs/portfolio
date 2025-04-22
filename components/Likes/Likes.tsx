@@ -20,6 +20,7 @@ const Likes = (): JSX.Element => {
 
   useEffect(() => {
     getAllLikes();
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLikePersisted]);
 
   const handlePostLike = useCallback(() => {
