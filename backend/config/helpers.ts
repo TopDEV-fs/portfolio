@@ -2,7 +2,6 @@ import mongoose from 'mongoose';
 /**
  * @EXPORTS
  */
-export { connectWithDB };
 
 /**
  *Instantiates connection with database

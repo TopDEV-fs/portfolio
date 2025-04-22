@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import nc from 'next-connect';
-import { connectWithDB } from '../../../backend/config/helpers';
+import connectWithDB from '../../../backend/config/helpers';
 import { onError } from '../../../middleware/onError';
 import {
   getAllApprovedComments,
