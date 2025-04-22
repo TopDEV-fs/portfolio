@@ -49,7 +49,6 @@ export const Photo = styled.div<Props>`
   z-index: 1;
   width: 70%;
   border-radius: 30%;
-  display: none;
   background: ${({ photo }) => `url(${photo}) center/cover`};
   /**
    * ----------------------------------------

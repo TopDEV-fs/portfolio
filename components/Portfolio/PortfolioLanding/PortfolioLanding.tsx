@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import * as Styled from './PortfolioLanding.styles';
 import AnimatedRouterLink from '../AnimatedRouterLink/AnimatedRouterLink';
 import TapHint from '../TapHint/TapHint';
-import { PROFILE_NAME } from '../../../config/config';
+import { FULL_NAME, PROFILE_NAME } from '../../../config/config';
 
 /**
  *Renders portfolio landing page
@@ -41,15 +41,17 @@ const PortfolioLanding = (): JSX.Element => {
           />
           <AnimatedRouterLink
             variant={'highlight'}
-            text={isMenuExpanded ? 'Contact' : PROFILE_NAME}
-            href={'/portfolio/contact'}
-            hoverText={'Contact'}
+            text={
+              // isMenuExpanded ? 'Contact' :
+              PROFILE_NAME
+            }
+            href={'/portfolio/'}
+            hoverText={FULL_NAME}
             animationTimeout={900}
           />
         </Styled.LinkWrapper>
       </Styled.Navigation>
       <Styled.Photo photo={'/assets/portfolio/processed-avatar.png'} />
-
       <TapHint />
     </Styled.Container>
   );
