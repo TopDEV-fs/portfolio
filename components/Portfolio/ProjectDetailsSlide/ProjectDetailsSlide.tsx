@@ -3,6 +3,7 @@ import * as Styled from './ProjectDetailsSlide.styles';
 import TextCarousel from '../TextCarousel/TextCarousel';
 import { useIntersectionObserver } from '../../../hooks/useIntersectionObserver';
 import { ICarouselQuote } from '../../../types/portfolio';
+import Image from 'next/image';
 
 export interface Props {
   slideHeight: string;
@@ -54,7 +55,7 @@ const ProjectDetailsSlide = ({
             <Styled.LevitatingWrapper>
               <Styled.Figure>
                 {[1, 2, 3, 4].map((id) => (
-                  <img key={id} src={projectMobileImg} alt={projectName} />
+                  <Image key={id} src={projectMobileImg} alt={projectName} />
                 ))}
               </Styled.Figure>
             </Styled.LevitatingWrapper>

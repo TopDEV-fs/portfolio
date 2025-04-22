@@ -30,6 +30,7 @@ const DesktopApps = (): JSX.Element => {
     if (sortDesktopIconsBy === 'size') {
       setDisplayedDesktopApps(sortedBySize);
     }
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sortDesktopIconsBy, removedApps.length, compressedApps.length]);
 
   return (
