@@ -63,7 +63,10 @@ export default class MyDocument extends Document {
             content={`${FULL_NAME} | ${JOB_TITLE} | Portfolio`}
           />
 
-          <meta property="og:url" content="https://www.vovacodes.ca/" />
+          <meta
+            property="og:url"
+            content="https://portfolio-4j7k5ur6o-topdev-fs-projects.vercel.app/"
+          />
           <meta property="og:site_name" content="vovacodes" />
           <script src="/init-sw.js" defer></script>
         </Head>

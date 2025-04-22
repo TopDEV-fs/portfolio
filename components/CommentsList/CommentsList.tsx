@@ -19,6 +19,7 @@ const CommentsList = (): JSX.Element => {
   const { comments, isLoading } = useTypedSelector((state) => state.comments);
   useEffect(() => {
     if (!comments.length) loadAllApprovedComments();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleLeaveComment = () => {
