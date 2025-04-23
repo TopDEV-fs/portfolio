@@ -40,8 +40,6 @@ const getAllLikes = async (
   req: NextApiRequest,
   res: NextApiResponse
 ): Promise<void> => {
-  console.log('OKOKOKOKOK');
-
   const features = new APIfeatures(
     Like.find({}),
     req.query as {

@@ -12,7 +12,7 @@ import {
   FiGithub,
   FiGlobe,
   FiMail,
-  FiPhoneOutgoing,
+  // FiPhoneOutgoing,
 } from 'react-icons/fi';
 import { SiLinkedin } from 'react-icons/si';
 import PortfolioParagraph from '../Typography/PortfolioParagraph/PortfolioParagraph';
@@ -25,7 +25,7 @@ import {
   LINKED_IN_URL,
   PROFILE_NAME,
   SURNAME,
-  TELE_NUM,
+  // TELE_NUM,
 } from '../../../config/config';
 
 /**
@@ -98,10 +98,10 @@ const Resume = (): JSX.Element => {
                 <FiMail className={'social-media-icon'} />
                 Email
               </Styled.SocialMediaLink>
-              <Styled.SocialMediaLink href={`tel:${TELE_NUM}`}>
+              {/* <Styled.SocialMediaLink href={`tel:${TELE_NUM}`}>
                 <FiPhoneOutgoing className={'social-media-icon'} />
                 {TELE_NUM}
-              </Styled.SocialMediaLink>
+              </Styled.SocialMediaLink> */}
 
               {/*Download PART*/}
               <Styled.SocialMediaLink
