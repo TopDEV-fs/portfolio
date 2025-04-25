@@ -4,6 +4,8 @@
 
 #### 🔥 If you really liked the project, consider giving it a star ⭐
 
+[![Follow Github](https://img.shields.io/github/followers/vovaushenko.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/vovaushenko)
+
 #### Feel Free to connect and say hi on any platforms!
 
 [![Follow Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/vova_ush)
@@ -21,7 +23,6 @@
 
 # At glance
 
-![home](./public/about/4.png)
 ![home](./public/about/2.png)
 ![home](./public/about/3.png)
 
