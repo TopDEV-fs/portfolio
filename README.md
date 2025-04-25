@@ -19,13 +19,6 @@
 - Styled-components 💅
 - MongoDB 🍃
 
-![home](./public/about/5.png)
-
-# At glance
-
-![home](./public/about/2.png)
-![home](./public/about/3.png)
-
 ## License
 
 ⚖️ MIT Copyright (c) 2021 Vova Ushenko
